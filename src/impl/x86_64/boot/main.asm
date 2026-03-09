@@ -81,7 +81,7 @@ setup_page_tables:
     mov [page_table_l2 + ecx * 8], eax
 
     inc ecx ;increment counter
-    cmp ecx, 512 ; checks if wwhole table is amepped
+    cmp ecx, 512 ; checks if whole table is amepped
     jne .loop ;if not, continue
 
     ret
